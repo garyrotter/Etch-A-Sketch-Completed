@@ -1,0 +1,7 @@
+Etch-A-Sketch: project notes
+
+So far this project has been going smoothly. I did run into an issue early on, repopulating the grid without compounding it on each button click.
+
+I actually found the answer but placed the code in a spot that had no benefit. After asking on the Discord channel for TOP and getting a hint that I had actually been on the right track I refound the code and thought about where it might be best to place it. With that solved it was on to the next piece, applying a revolving active class to a clicked button. This was surprisingly easier to do, though the answer came through searching for something else. I was trying to find methods to add an active tag on w3schools and, lo and behold, two buttons down was "Active Class". The code snippet I needed was already defined for me.
+
+Now, I proceed to making a mouse over on a div change that div to a black square...

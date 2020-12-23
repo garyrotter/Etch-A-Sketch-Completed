@@ -1,0 +1,151 @@
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(180deg, rgb(201, 201, 201), rgb(22, 22, 22));
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.nav {
+    display: block;
+    font-size: 2rem;
+}
+
+.nav h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.nav p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#colorbutton {
+    display: flex;
+    flex-direction: column;
+}
+#gridsizes {
+    display: flex;
+    flex-direction: row;
+}
+
+#buttons .button{
+    margin: 25px 10px;
+    padding: 30px 0;
+    width: 80px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #FFF;
+    text-shadow: 0 0 7px #FFF;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
+    cursor: pointer;
+    outline: 0 !important;
+    transition: all .3s ease-in;
+}
+
+#buttons .clrbutton {
+    margin: 5px 10px;
+    padding: 10px 0;
+    width: 80px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #FFF;
+    text-shadow: 0 0 7px #FFF;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
+    cursor: pointer;
+    outline: 0 !important;
+    transition: all .3s ease-in;
+    
+}
+
+
+
+#buttons .active {
+    background-color:rgb(88, 88, 88, 0.5);
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    transition: all .3s ease-in;
+}
+
+#buttons .act {
+    background-color:rgb(88, 88, 88, 0.5);
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    transition: all .3s ease-in;
+}
+
+#etch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    background-color: white;
+    margin-top: 20px;
+}
+
+.grid {
+    /* margin-top: 25px; */
+    width: 50vh;
+    height: 50vh;
+    border: none;
+    box-shadow: 0 0 30px #FFF, 0 0 30px #FFF inset;
+}
+
+#grid div{
+    padding: auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+}
+
+.footer p {
+    font-size: 12px;
+}
+

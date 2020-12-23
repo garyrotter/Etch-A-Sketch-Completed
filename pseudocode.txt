@@ -1,0 +1,49 @@
+OVERALL PROJECT TASKS:
+
+[X] Build HTML framework
+[] add CSS
+
+[x] Create a page with 16x16 grid of square divs
+    [X] Create the divs using JS
+    [X] Best to put your grid squares inside another "container" div (put directly into HTML)
+    [X] Different ways to make the divs appear as a grid
+        [] float/clear
+        [] inline-block
+        [] flexbox
+        [X] CSS Grid
+    [X] Be careful with borders and margins, they can adjust the size of squares!
+    [X] "OMG, Why isn't my grid being created???"
+
+[] Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+    [] Hint: “hovering” is what happens when your mouse enters a div and ends when your mouse leaves it.. you can set up event listeners for either of those events as a starting point.
+    [] There are multiple ways to change the color of the divs, including:
+        [] adding a new class to the div
+        [] changing the div’s background color using JavaScript.
+
+[X] Add a button to the top of the screen which will clear the current grid and send the user a popup asking for how many squares per side to make the new grid.
+    [x] Once entered the new grid should be generated in the same total space as before (e.g. 960px wide) and now you’ve got a new sketch pad. 
+    [x] Tip: Set the limit for the user input to a maximum of 100. A larger number of squares results in more computer resources being used, resulting in possible delays, freezing, or crashing that we want  to prevent.
+    [x] Research button tags in HTML and how you can make a JavaScript function run when one is clicked.
+    [x] Also check out prompts
+    [x] You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used
+
+[] (Optional): Instead of just changing the color of your grid from black to white (for example) have each pass through it with the mouse change to a completely random RGB value. Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
+
+[] Push your project to GitHub!
+
+
+JS/CSS TASKS OVERVIEW:
+
+[x] event listener 'click' on all buttons
+
+[x] on click should change grid size to button specifications
+    [x] on click should reset the grid drawing
+  
+[x] should set rgb colors for "light" button
+[x] should set dark greyscale for "dark" button"
+[x] should set white to "erase" button
+[x] should set black to "black" button
+
+[x] should have grid size button highlighted while active
+[x] should have color button highlighted while active
+
